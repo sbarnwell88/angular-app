@@ -1,15 +1,25 @@
 <div>
-    <div ng-repeat='user in vmUsers.users'>
-        <img ng-src='https://robohash.org/{{ user.name }}.png?size=200x200'/>
-        name: {{ user.name }}
-        Email: {{ user.email}}
-        <button type='submit' ng-click='vmUsers.deleteUser(user)'>(x)</button>
+    <div class='user-container'>
+        <div ng-repeat='user in vmUsers.users'>
+                <div class='card' style="width: 20rem;">
+                    <img ng-src='https://robohash.org/{{ user.name }}.png?size=200x200'class="card-img-top"/>
+                    <div class="card-body">
+                        <p>Name: {{ user.name }}</p>
+                        <p>Email: {{ user.email}}</p>
+                    </div>
+                    <button type='submit' class="btn btn-danger" ng-click='vmUsers.deleteUser(user)'>(x)</button>
+                </div>
+        </div>
     </div>
-    <form ng-submit="vmUsers.createUser(newUser)">
-        name:
-        <input type='text' name='name' ng-model='newUser.name'>
-        email: 
-        <input type='text' name='email' ng-model='newUser.email'>  
-        <button type='submit'>Create</button>
+    <form class='card' ng-submit="vmUsers.createUser(newUser)">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <input type='text' class="form-control" placeholder="name" name='name' ng-model='newUser.name' required>
+            </div>
+            <div class="col-md-3 mb-3">
+                <input type='text' class="form-control" placeholder="email" name='email' ng-model='newUser.email' required>  
+            </div>
+        </div>
+        <button type='submit' class="btn btn-dark">Create</button>
     </form>
-    </div>
+</div>
