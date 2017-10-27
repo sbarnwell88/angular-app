@@ -29,7 +29,8 @@
             console.log(res.data)
             vmUsers.users.push(res.data);
             vmUsers.newUser = {};
-            vmUsers.newUser = '';
+            $scope.newUser.name = '';
+            $scope.newUser.email = '';
         });
     }
 
