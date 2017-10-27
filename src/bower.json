@@ -1,0 +1,17 @@
+{
+  "name": "src",
+  "authors": [
+    "sbarnwell88 <susy6688@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

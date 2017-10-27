@@ -1,0 +1,14 @@
+<div>
+    <div ng-repeat='user in vmUsers.users'>
+        <img ng-src='https://robohash.org/{{ user.name }}.png?size=200x200'/>
+        name: {{ user.name }}
+        Email: {{ user.email}}
+    </div>
+    <form ng-submit="vmUsers.createUser(newUser)">
+        name:
+        <input type='text' name='name' ng-model='newUser.name'>
+        email: 
+        <input type='text' name='email' ng-model='newUser.email'>  
+        <button type='submit'>Create</button>
+    </form>
+    </div>
