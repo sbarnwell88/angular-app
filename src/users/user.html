@@ -3,6 +3,7 @@
         <img ng-src='https://robohash.org/{{ user.name }}.png?size=200x200'/>
         name: {{ user.name }}
         Email: {{ user.email}}
+        <button type='submit' ng-click='vmUsers.deleteUser(user)'>(x)</button>
     </div>
     <form ng-submit="vmUsers.createUser(newUser)">
         name:
