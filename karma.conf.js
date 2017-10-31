@@ -19,8 +19,10 @@ module.exports = function(config) {
       './node_modules/angular-ui-router/release/angular-ui-router.js', // ui-router
       './node_modules/angular-mocks/angular-mocks.js',
       './src/users/user.module.js',
+      './src/users/user.controller.js',
       './src/users/user.service.js',
-      './src/users/users.spec.js',
+      './src/users/users.service.spec.js',
+      './src/users/user.spec.js'
     ],
 
 

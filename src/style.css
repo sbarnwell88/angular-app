@@ -9,6 +9,10 @@
     justify-content: center;
     padding-bottom: 30px;
 }
+h1 {
+    text-align: center;
+    padding: 20px;
+}
 h3 {
     text-align: center;
 }

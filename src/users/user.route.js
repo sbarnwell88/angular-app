@@ -10,6 +10,5 @@ angular.module('userApp')
             url: '/users',
             templateUrl: 'users/user.html',
             controller: 'MainCtrl as vmUsers'
-        })
-
-})
+        });
+});

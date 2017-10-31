@@ -12,8 +12,11 @@ function userService($http) {
         getUsers : getUsers,
         createUser: createUsers,
         deleteUser: deleteUser
-    }
+    };
 
+function sayHello() {
+    return 'hello world';
+}
 
 function getUsers() {
     return $http.get('http://jsonplaceholder.typicode.com/users');
@@ -24,7 +27,7 @@ function createUsers(user) {
 }
 
 function deleteUser(id) {
-    return $http.delete('http://jsonplaceholder.typicode.com/users/' + id)
+    return $http.delete('http://jsonplaceholder.typicode.com/users/' + id);
 }
 }
 
